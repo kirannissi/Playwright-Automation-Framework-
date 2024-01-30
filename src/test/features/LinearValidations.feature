@@ -21,6 +21,7 @@ Feature: Validations on Linear Table
 
 
 Scenario: users logins to verify the validations of linear table 
+
     Given I Log into the UT Environment
     When I click element "//div[text()='Testing']" 
     When I click element "//div[text()='Test Site 1']" 

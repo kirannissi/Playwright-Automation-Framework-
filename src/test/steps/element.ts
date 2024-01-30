@@ -5,7 +5,6 @@ let browser: Browser;
 let page: Page;
 
 Given('User navigates to the application url {string}', async function (url) {
-    //console.log("I have implemented steps ");
     browser= await chromium.launch({headless:false});
     page= await browser.newPage();
     await page.goto(url);
