@@ -11,10 +11,6 @@ Given('User navigates to the application url {string}', async function (url) {
     await page.goto(url);
 });
 
-When('I click element on submit button {string} and this will do {string}', async function (element){
-   await page.locator(element).click();
-});
-
 When('I click element {string}', async function (element){
     await page.locator(element).click();
  });
@@ -31,10 +27,8 @@ Then('The element {string} is visible', async function (element) {
     await page.locator(element).isVisible();
 }); 
 
-When('I click {string}', async function () {
-//     bdk-insite-user-system-admin-1@bradkeninsiteut.onmicrosoft.com
-
-// ndj.exq@xcg3gvy8PQW
+When('I click {string}', async function (element) {
+    await page.locator(element).click();
 });
 
 When('I click first element {string}', async function () {
